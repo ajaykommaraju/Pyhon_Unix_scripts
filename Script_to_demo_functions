@@ -1,0 +1,26 @@
+
+#!/usr/dev_infra/platform/bin/python2.7
+# A system information gathering script using functions
+import subprocess
+
+#function1
+def uname_func():
+    uname = "uname"
+    uname_args = "-a"
+    print " Gathering system information with %s command:\n" % uname
+    subprocess.call([uname, uname_args])
+
+#function2
+def disk_func():
+    diskspace = "df"
+    diskspace_args = "-h"
+    print " Gathering system information with %s command:\n" % diskspace
+    subprocess.call([diskspace, diskspace_args])
+
+# Main Function
+def main():
+    uname_func()
+    disk_func()
+
+#calling the main function
+main()
