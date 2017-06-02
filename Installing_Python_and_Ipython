@@ -1,0 +1,12 @@
+How to Install Python 2.7 on a Redhat 6 Machine in a go 
+Create repo file 
+#touch /etc/yum.repos.d/scl.repo
+Download the repo file from redhat and copy the content to the scl.repo file you just created 
+sudo sh -c 'wget -qO- http://people.redhat.com/bkabrda/scl_python27.repo >> /etc/yum.repos.d/scl.repo'
+#yum install python27
+Thats it, check the version with the below command  
+#python -V
+
+Installing Ipython 
+rpm -Uvh http://dl.fedoraproject.org/pub/epel/6/i386/epel-release-6-8.noarch.rpm
+yum install ipython
