@@ -1,6 +1,5 @@
 #this program is to recersively traverse to directories and find jason files
 import os
-
 phrase = '"path"'
 for root, dirs, files in os.walk("."):
     for file in files:
