@@ -1,5 +1,6 @@
 #this program is to recersively traverse to directories and find jason files
 import os
+#motive is to search "path" in the file and get the line if found
 phrase = '"path"'
 for root, dirs, files in os.walk("."):
     for file in files:
